@@ -14,11 +14,11 @@ A **Flutter package** that provides a ready-to-use **currency selector widget** 
 
 Dialog Example:
 
-<img src="example/assets/screenshot_dialog.png" alt="Dialog Screenshot" width="250"/>
+<img src="assets/screenshot_dialog.png" alt="Dialog Screenshot" width="250"/>
 
 Bottom Sheet Example:
 
-<img src="example/assets/screenshot_bottomsheet.png" alt="Dialog Screenshot" width="250"/>
+<img src="assets/screenshot_bottomsheet.png" alt="Dialog Screenshot" width="250"/>
 
 ---
 
