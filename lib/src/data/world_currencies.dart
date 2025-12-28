@@ -1,0 +1,112 @@
+import 'package:currency_selector/src/models/currency_info.dart';
+
+const List<CurrencyInfo> worldCurrencies = [
+  // Major currencies
+  CurrencyInfo(code: 'USD', name: 'US Dollar', symbol: '\$', flag: '🇺🇸'),
+  CurrencyInfo(code: 'EUR', name: 'Euro', symbol: '€', flag: '🇪🇺'),
+  CurrencyInfo(code: 'GBP', name: 'British Pound', symbol: '£', flag: '🇬🇧'),
+  CurrencyInfo(code: 'JPY', name: 'Japanese Yen', symbol: '¥', flag: '🇯🇵'),
+  CurrencyInfo(code: 'CHF', name: 'Swiss Franc', symbol: 'Fr', flag: '🇨🇭'),
+  CurrencyInfo(code: 'CAD', name: 'Canadian Dollar', symbol: 'C\$', flag: '🇨🇦'),
+  CurrencyInfo(code: 'AUD', name: 'Australian Dollar', symbol: 'A\$', flag: '🇦🇺'),
+  CurrencyInfo(code: 'CNY', name: 'Chinese Yuan', symbol: '¥', flag: '🇨🇳'),
+
+  // Americas
+  CurrencyInfo(code: 'ARS', name: 'Argentine Peso', symbol: '\$', flag: '🇦🇷'),
+  CurrencyInfo(code: 'BRL', name: 'Brazilian Real', symbol: 'R\$', flag: '🇧🇷'),
+  CurrencyInfo(code: 'CLP', name: 'Chilean Peso', symbol: '\$', flag: '🇨🇱'),
+  CurrencyInfo(code: 'COP', name: 'Colombian Peso', symbol: '\$', flag: '🇨🇴'),
+  CurrencyInfo(code: 'MXN', name: 'Mexican Peso', symbol: '\$', flag: '🇲🇽'),
+  CurrencyInfo(code: 'PEN', name: 'Peruvian Sol', symbol: 'S/', flag: '🇵🇪'),
+  CurrencyInfo(code: 'UYU', name: 'Uruguayan Peso', symbol: '\$U', flag: '🇺🇾'),
+  CurrencyInfo(code: 'VES', name: 'Venezuelan Bolivar', symbol: 'Bs', flag: '🇻🇪'),
+  CurrencyInfo(code: 'BOB', name: 'Bolivian Boliviano', symbol: 'Bs', flag: '🇧🇴'),
+  CurrencyInfo(code: 'PYG', name: 'Paraguayan Guarani', symbol: '₲', flag: '🇵🇾'),
+  CurrencyInfo(code: 'DOP', name: 'Dominican Peso', symbol: 'RD\$', flag: '🇩🇴'),
+  CurrencyInfo(code: 'CRC', name: 'Costa Rican Colon', symbol: '₡', flag: '🇨🇷'),
+  CurrencyInfo(code: 'GTQ', name: 'Guatemalan Quetzal', symbol: 'Q', flag: '🇬🇹'),
+  CurrencyInfo(code: 'HNL', name: 'Honduran Lempira', symbol: 'L', flag: '🇭🇳'),
+  CurrencyInfo(code: 'NIO', name: 'Nicaraguan Cordoba', symbol: 'C\$', flag: '🇳🇮'),
+  CurrencyInfo(code: 'PAB', name: 'Panamanian Balboa', symbol: 'B/.', flag: '🇵🇦'),
+
+  // Europe
+  CurrencyInfo(code: 'SEK', name: 'Swedish Krona', symbol: 'kr', flag: '🇸🇪'),
+  CurrencyInfo(code: 'NOK', name: 'Norwegian Krone', symbol: 'kr', flag: '🇳🇴'),
+  CurrencyInfo(code: 'DKK', name: 'Danish Krone', symbol: 'kr', flag: '🇩🇰'),
+  CurrencyInfo(code: 'PLN', name: 'Polish Zloty', symbol: 'zł', flag: '🇵🇱'),
+  CurrencyInfo(code: 'CZK', name: 'Czech Koruna', symbol: 'Kč', flag: '🇨🇿'),
+  CurrencyInfo(code: 'HUF', name: 'Hungarian Forint', symbol: 'Ft', flag: '🇭🇺'),
+  CurrencyInfo(code: 'RON', name: 'Romanian Leu', symbol: 'lei', flag: '🇷🇴'),
+  CurrencyInfo(code: 'BGN', name: 'Bulgarian Lev', symbol: 'лв', flag: '🇧🇬'),
+  CurrencyInfo(code: 'HRK', name: 'Croatian Kuna', symbol: 'kn', flag: '🇭🇷'),
+  CurrencyInfo(code: 'RSD', name: 'Serbian Dinar', symbol: 'дин', flag: '🇷🇸'),
+  CurrencyInfo(code: 'ISK', name: 'Icelandic Krona', symbol: 'kr', flag: '🇮🇸'),
+  CurrencyInfo(code: 'RUB', name: 'Russian Ruble', symbol: '₽', flag: '🇷🇺'),
+  CurrencyInfo(code: 'UAH', name: 'Ukrainian Hryvnia', symbol: '₴', flag: '🇺🇦'),
+  CurrencyInfo(code: 'TRY', name: 'Turkish Lira', symbol: '₺', flag: '🇹🇷'),
+
+  // Asia
+  CurrencyInfo(code: 'INR', name: 'Indian Rupee', symbol: '₹', flag: '🇮🇳'),
+  CurrencyInfo(code: 'KRW', name: 'South Korean Won', symbol: '₩', flag: '🇰🇷'),
+  CurrencyInfo(code: 'SGD', name: 'Singapore Dollar', symbol: 'S\$', flag: '🇸🇬'),
+  CurrencyInfo(code: 'HKD', name: 'Hong Kong Dollar', symbol: 'HK\$', flag: '🇭🇰'),
+  CurrencyInfo(code: 'TWD', name: 'Taiwan Dollar', symbol: 'NT\$', flag: '🇹🇼'),
+  CurrencyInfo(code: 'THB', name: 'Thai Baht', symbol: '฿', flag: '🇹🇭'),
+  CurrencyInfo(code: 'MYR', name: 'Malaysian Ringgit', symbol: 'RM', flag: '🇲🇾'),
+  CurrencyInfo(code: 'IDR', name: 'Indonesian Rupiah', symbol: 'Rp', flag: '🇮🇩'),
+  CurrencyInfo(code: 'PHP', name: 'Philippine Peso', symbol: '₱', flag: '🇵🇭'),
+  CurrencyInfo(code: 'VND', name: 'Vietnamese Dong', symbol: '₫', flag: '🇻🇳'),
+  CurrencyInfo(code: 'PKR', name: 'Pakistani Rupee', symbol: '₨', flag: '🇵🇰'),
+  CurrencyInfo(code: 'BDT', name: 'Bangladeshi Taka', symbol: '৳', flag: '🇧🇩'),
+  CurrencyInfo(code: 'LKR', name: 'Sri Lankan Rupee', symbol: 'Rs', flag: '🇱🇰'),
+  CurrencyInfo(code: 'NPR', name: 'Nepalese Rupee', symbol: '₨', flag: '🇳🇵'),
+  CurrencyInfo(code: 'MMK', name: 'Myanmar Kyat', symbol: 'K', flag: '🇲🇲'),
+  CurrencyInfo(code: 'KHR', name: 'Cambodian Riel', symbol: '៛', flag: '🇰🇭'),
+  CurrencyInfo(code: 'LAK', name: 'Lao Kip', symbol: '₭', flag: '🇱🇦'),
+
+  // Middle East
+  CurrencyInfo(code: 'AED', name: 'UAE Dirham', symbol: 'د.إ', flag: '🇦🇪'),
+  CurrencyInfo(code: 'SAR', name: 'Saudi Riyal', symbol: '﷼', flag: '🇸🇦'),
+  CurrencyInfo(code: 'QAR', name: 'Qatari Riyal', symbol: '﷼', flag: '🇶🇦'),
+  CurrencyInfo(code: 'KWD', name: 'Kuwaiti Dinar', symbol: 'د.ك', flag: '🇰🇼'),
+  CurrencyInfo(code: 'BHD', name: 'Bahraini Dinar', symbol: '.د.ب', flag: '🇧🇭'),
+  CurrencyInfo(code: 'OMR', name: 'Omani Rial', symbol: '﷼', flag: '🇴🇲'),
+  CurrencyInfo(code: 'JOD', name: 'Jordanian Dinar', symbol: 'د.ا', flag: '🇯🇴'),
+  CurrencyInfo(code: 'ILS', name: 'Israeli Shekel', symbol: '₪', flag: '🇮🇱'),
+  CurrencyInfo(code: 'EGP', name: 'Egyptian Pound', symbol: '£', flag: '🇪🇬'),
+  CurrencyInfo(code: 'LBP', name: 'Lebanese Pound', symbol: 'ل.ل', flag: '🇱🇧'),
+  CurrencyInfo(code: 'IQD', name: 'Iraqi Dinar', symbol: 'ع.د', flag: '🇮🇶'),
+  CurrencyInfo(code: 'IRR', name: 'Iranian Rial', symbol: '﷼', flag: '🇮🇷'),
+
+  // Africa
+  CurrencyInfo(code: 'ZAR', name: 'South African Rand', symbol: 'R', flag: '🇿🇦'),
+  CurrencyInfo(code: 'NGN', name: 'Nigerian Naira', symbol: '₦', flag: '🇳🇬'),
+  CurrencyInfo(code: 'KES', name: 'Kenyan Shilling', symbol: 'KSh', flag: '🇰🇪'),
+  CurrencyInfo(code: 'GHS', name: 'Ghanaian Cedi', symbol: '₵', flag: '🇬🇭'),
+  CurrencyInfo(code: 'TZS', name: 'Tanzanian Shilling', symbol: 'TSh', flag: '🇹🇿'),
+  CurrencyInfo(code: 'UGX', name: 'Ugandan Shilling', symbol: 'USh', flag: '🇺🇬'),
+  CurrencyInfo(code: 'MAD', name: 'Moroccan Dirham', symbol: 'د.م.', flag: '🇲🇦'),
+  CurrencyInfo(code: 'DZD', name: 'Algerian Dinar', symbol: 'د.ج', flag: '🇩🇿'),
+  CurrencyInfo(code: 'TND', name: 'Tunisian Dinar', symbol: 'د.ت', flag: '🇹🇳'),
+  CurrencyInfo(code: 'XOF', name: 'West African CFA', symbol: 'CFA', flag: '🌍'),
+  CurrencyInfo(code: 'XAF', name: 'Central African CFA', symbol: 'FCFA', flag: '🌍'),
+  CurrencyInfo(code: 'ETB', name: 'Ethiopian Birr', symbol: 'Br', flag: '🇪🇹'),
+  CurrencyInfo(code: 'RWF', name: 'Rwandan Franc', symbol: 'FRw', flag: '🇷🇼'),
+
+  // Oceania
+  CurrencyInfo(code: 'NZD', name: 'New Zealand Dollar', symbol: 'NZ\$', flag: '🇳🇿'),
+  CurrencyInfo(code: 'FJD', name: 'Fijian Dollar', symbol: 'FJ\$', flag: '🇫🇯'),
+  CurrencyInfo(code: 'PGK', name: 'Papua New Guinean Kina', symbol: 'K', flag: '🇵🇬'),
+
+  // Caribbean
+  CurrencyInfo(code: 'JMD', name: 'Jamaican Dollar', symbol: 'J\$', flag: '🇯🇲'),
+  CurrencyInfo(code: 'TTD', name: 'Trinidad Dollar', symbol: 'TT\$', flag: '🇹🇹'),
+  CurrencyInfo(code: 'BBD', name: 'Barbadian Dollar', symbol: 'Bds\$', flag: '🇧🇧'),
+  CurrencyInfo(code: 'BSD', name: 'Bahamian Dollar', symbol: 'B\$', flag: '🇧🇸'),
+  CurrencyInfo(code: 'CUP', name: 'Cuban Peso', symbol: '\$', flag: '🇨🇺'),
+  CurrencyInfo(code: 'HTG', name: 'Haitian Gourde', symbol: 'G', flag: '🇭🇹'),
+
+  // Crypto (popular)
+  CurrencyInfo(code: 'BTC', name: 'Bitcoin', symbol: '₿', flag: '🪙'),
+  CurrencyInfo(code: 'ETH', name: 'Ethereum', symbol: 'Ξ', flag: '🪙'),
+];

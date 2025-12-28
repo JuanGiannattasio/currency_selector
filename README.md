@@ -29,7 +29,7 @@ Add this to your `pubspec.yaml`:
 dependencies:
   currency_selector:
     git:
-      url: https://github.com/yourusername/currency_selector.git
+      url: https://github.com/JuanGiannattasio/currency_selector
 
 Then import it:
 
