@@ -1,6 +1,6 @@
 name: currency_selector
 description: A ready-to-use currency picker dialog with world currencies, symbols and flags.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/JuanGiannattasio/currency_selector
 repository: https://github.com/JuanGiannattasio/currency_selector
 
