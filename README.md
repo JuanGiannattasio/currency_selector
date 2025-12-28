@@ -10,6 +10,18 @@ A **Flutter package** that provides a ready-to-use **currency selector widget** 
 
 ---
 
+## Screenshots
+
+Dialog Example:
+
+<img src="example/assets/screenshot_dialog.png" alt="Dialog Screenshot" width="250"/>
+
+Bottom Sheet Example:
+
+<img src="example/assets/screenshot_bottomsheet.png" alt="Dialog Screenshot" width="250"/>
+
+---
+
 ## Features
 
 - Display a **list of currencies** with flags and symbols
@@ -27,9 +39,7 @@ A **Flutter package** that provides a ready-to-use **currency selector widget** 
 Add this to your `pubspec.yaml`:
 
 dependencies:
-  currency_selector:
-    git:
-      url: https://github.com/JuanGiannattasio/currency_selector
+  currency_selector: any
 
 Then import it:
 
