@@ -1,6 +1,6 @@
 name: currency_selector
 description: A ready-to-use currency picker dialog with world currencies, symbols and flags.
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/JuanGiannattasio/currency_selector
 repository: https://github.com/JuanGiannattasio/currency_selector
 
@@ -14,3 +14,5 @@ dependencies:
 
 dev_dependencies:
   flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter

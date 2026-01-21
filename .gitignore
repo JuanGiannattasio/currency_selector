@@ -67,3 +67,5 @@ example/android/.gradle/
 example/android/app/build/
 example/ios/Pods/
 example/ios/Flutter/Flutter.podspec
+
+build/

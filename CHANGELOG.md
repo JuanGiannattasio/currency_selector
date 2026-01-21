@@ -1,13 +1,24 @@
 # Changelog
 
+## [1.0.2]
+
+### Added
+
+- `CurrencyInfo` added `isCrypto` property to distinguish between fiat and crypto currencies.
+- `showCryptoCurrencies` parameter to `showCurrencySelectorBottomSheet` and `showCurrencySelectorDialog` to control whether crypto currencies are shown.
+
 ## [1.0.1]
+
 ### Fixed
+
 - Updated README to display screenshots correctly on pub.dev.
 - Moved screenshot images from `example/` to `assets/` in the root of the package.
 - No functional changes to the package API.
 
 ## [1.0.0]
+
 ### Added
+
 - `CurrencyInfo` model to represent currency data (code, name, symbol, flag).
 - Default list of world currencies (`worldCurrencies`), including fiat and popular crypto.
 - Helper function `getCurrencySymbol(String code)` to get currency symbol by code.

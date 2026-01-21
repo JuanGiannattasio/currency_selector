@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// Shows the currency selector as a dialog.
 ///
 /// Opens a modal dialog with a searchable list of currencies.
-/// 
+///
 /// Returns the selected currency code, or null if the dialog is dismissed.
 ///
 /// Parameters:
@@ -24,9 +24,14 @@ Future<String?> showCurrencySelectorDialog({
   Color? backgroundColor,
   String? hintText,
   String? noCurrenciesFoundText,
+  bool showCryptoCurrencies = true,
   List<CurrencyInfo>? currencies,
 }) {
-  final currencyList = currencies ?? worldCurrencies;
+  List<CurrencyInfo> currencyList = [...currencies ?? worldCurrencies];
+
+  if (!showCryptoCurrencies) {
+    currencyList.removeWhere((currency) => currency.isCrypto);
+  }
 
   return showDialog<String>(
     context: context,
@@ -48,7 +53,7 @@ Future<String?> showCurrencySelectorDialog({
 /// Shows the currency selector as a Bottom Sheet.
 ///
 /// Opens a bottom sheet with a searchable list of currencies.
-/// 
+///
 /// Returns the selected currency code, or null if the dialog is dismissed.
 ///
 /// Parameters:
@@ -70,9 +75,14 @@ Future<String?> showCurrencySelectorBottomSheet({
   String? hintText,
   String? noCurrenciesFoundText,
   List<CurrencyInfo>? currencies,
+  bool showCryptoCurrencies = true,
   bool isScrollControlled = true,
 }) {
-  final currencyList = currencies ?? worldCurrencies;
+  List<CurrencyInfo> currencyList = [...currencies ?? worldCurrencies];
+
+  if (!showCryptoCurrencies) {
+    currencyList.removeWhere((currency) => currency.isCrypto);
+  }
 
   return showModalBottomSheet<String>(
     context: context,
@@ -82,9 +92,11 @@ Future<String?> showCurrencySelectorBottomSheet({
       borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
     ),
     builder: (_) => Padding(
-      padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
+      padding: EdgeInsets.only(
+        bottom: MediaQuery.of(context).viewInsets.bottom,
+      ),
       child: Container(
-        width: double.infinity, 
+        width: double.infinity,
         constraints: BoxConstraints(
           maxHeight: MediaQuery.of(context).size.height * 0.75,
         ),

@@ -32,7 +32,8 @@ class MyHomePage extends StatelessWidget {
                   context: context,
                   title: 'Pick a currency',
                   primaryColor: Colors.blue,
-                  selectedCurrency: 'USD'
+                  selectedCurrency: 'USD',
+                  showCryptoCurrencies: false,
                 );
               },
               child: const Text('Show Dialog'),
@@ -43,7 +44,7 @@ class MyHomePage extends StatelessWidget {
                 await showCurrencySelectorBottomSheet(
                   context: context,
                   title: 'Pick a currency',
-                  primaryColor: Colors.green
+                  primaryColor: Colors.green,
                 );
               },
               child: const Text('Show Bottom Sheet'),
